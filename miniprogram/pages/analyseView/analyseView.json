@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "统计查看",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "loginjudge": "../../loginjudge/loginjudge",
+    "ec-canvas": "../../utils/ec-canvas/ec-canvas"
+  }
+}

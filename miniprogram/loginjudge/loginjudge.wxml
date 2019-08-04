@@ -1,0 +1,22 @@
+<view  class='loginjudge'>
+  <view class='loginwrap'>
+
+    <view class='uppage0'>
+    <image src="{{avatarUrl}}" ></image>
+    </view>
+
+    <view class='uppage1'>
+
+      <view>
+        <text>{{userInfo.nickName?userInfo.nickName:'未授权无法使用'}}</text>
+      </view>
+
+      <view>
+        <text>{{nowtime}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

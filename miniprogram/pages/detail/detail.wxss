@@ -1,0 +1,104 @@
+/* miniprogram/pages/detail/detail.wxss */
+page{
+  background-color:rgb(255, 254, 240);
+}
+.topbanner{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  justify-content: center;
+  margin: 20rpx;
+  box-shadow: 0px 0px 2px gray;
+  border-radius: 1%;
+  background-color: #fff
+}
+.upbanner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.maintext{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1
+}
+.internaltext{
+  display: flex;
+  flex-direction: column;
+}
+.head{
+  display: flex;
+  flex-grow: 0.3;
+  justify-content: center;
+  align-items: center;
+}
+.head>image{
+  display: block;
+  width: 80rpx;
+  height:80rpx;
+}
+.maintext>text{
+  font-size: 40rpx;
+  margin: 10rpx;
+}
+.internaltext>text{
+  font-size: 30rpx;
+  margin: 10rpx;
+}
+.spendtime{
+  font-size: 30rpx;
+  flex-direction: column;
+  flex-grow: 0.3;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+.bottombanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.addrecord button{
+  width:100%;
+  position: static;
+}
+.addrecord{
+  width:100%;
+  border-bottom: 1px solid rgb(238, 238, 238)
+}
+.note{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10rpx;
+}
+.note>text{
+  padding:20rpx 30rpx;
+  width: 100%;
+  border-bottom: 1px solid rgb(238, 238, 238)
+}
+.changestate,.delplan{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.changestate>text,.delplan>text{
+  padding:20rpx 30rpx;
+  text-align: center;
+}
+.changestate{
+  border-bottom: 1px solid rgb(238, 238, 238)
+}
+.hoverclass{
+  background-color: #ececec
+}

@@ -1,0 +1,13 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "展示计划详情",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "wux-date-picker": "../../miniprogram_npm/wux-weapp/date-picker/index",
+    "wux-cell": "../../miniprogram_npm/wux-weapp/cell/index",
+    "wux-toptips": "../../miniprogram_npm/wux-weapp/toptips/index"
+  }
+}

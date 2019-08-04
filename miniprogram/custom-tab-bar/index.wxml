@@ -1,0 +1,52 @@
+
+<custom-tab-bar>
+<cover-view class='tab-bar'>
+    <!-- 背景一条线 -->
+    <cover-view class='tab-bar-bg-view'/>
+    <cover-view class='back'></cover-view>
+    
+    <!-- 发现 -->
+    <cover-view class='tab-bar-index' data-index='0' data-path='{{list[0].pagePath}}' bindtap='tab_bar_index'>
+      <cover-view class='tab-bar-icon'>
+        <cover-image src='{{selected == 0 ? list[0].selectedIconPath : list[0].iconPath}}' class='tab-bar-img'/>
+        <cover-view class='tab-bar-tmp'/>
+        <cover-view class='tab-bar-text' style='color:{{selected == 0 ? selectedColor : color}}'>{{list[0].text}}</cover-view>
+      </cover-view>
+    </cover-view>
+
+    <!-- 项目 -->
+    <cover-view class='tab-bar-index' data-index='1' data-path='{{list[1].pagePath}}' bindtap='tab_bar_index'>
+      <cover-view class='tab-bar-icon'>
+        <cover-image src='{{selected == 1 ? list[1].selectedIconPath : list[1].iconPath}}' class='tab-bar-img'/>
+        <cover-view class='tab-bar-tmp'/>
+        <cover-view class='tab-bar-text' style='color:{{selected == 1 ? selectedColor : color}}'>{{list[1].text}}</cover-view>
+      </cover-view>
+    </cover-view>
+
+    <!-- 发布 -->
+    <cover-view class='tab-bar-index-add' bindtap='tab_bar_add'>
+      <cover-view class='tab-bar-icon_add'>
+        <cover-image class='tab-bar-img-add' src='{{addImgPath}}'/>
+      </cover-view>
+    </cover-view>
+
+    <!-- 成就 -->
+    <cover-view class='tab-bar-index' data-index='2' data-path='{{list[2].pagePath}}' bindtap='tab_bar_index'>
+      <cover-view class='tab-bar-icon'>
+        <cover-image src='{{selected == 2 ? list[2].selectedIconPath : list[2].iconPath}}' class='tab-bar-img'/>
+        <cover-view class='tab-bar-tmp'/>
+        <cover-view class='tab-bar-text' style='color:{{selected == 2 ? selectedColor : color}}'>{{list[2].text}}</cover-view>
+      </cover-view>
+    </cover-view>
+
+    <!-- 关于 -->
+    <cover-view class='tab-bar-index' data-index='3' data-path='{{list[3].pagePath}}' bindtap='tab_bar_index'>
+      <cover-view class='tab-bar-icon'>
+        <cover-image src='{{selected == 3 ? list[3].selectedIconPath : list[3].iconPath}}' class='tab-bar-img'/>
+        <cover-view class='tab-bar-tmp'/>
+        <cover-view class='tab-bar-text'  style='color:{{selected == 3 ? selectedColor : color}}'>{{list[3].text}}</cover-view>
+      </cover-view>
+    </cover-view>
+
+</cover-view>
+</custom-tab-bar>

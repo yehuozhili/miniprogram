@@ -1,0 +1,6 @@
+<!--pages/about/about.wxml-->
+<view class="myview"> 
+<text>若各位大佬有工作推荐可发送至邮箱yehuozhili@outlook.com</text>
+<text bindtap="mybind">此应用免费，若您觉得此应用对您有帮助可以请作者喝杯可乐</text>
+
+</view>

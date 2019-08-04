@@ -1,0 +1,8 @@
+<wux-dialog id="wux-dialog" />
+
+<view class="page">
+    <view class="page__bd page__bd_spacing">
+    <text class="textlogo">请授权后使用此应用</text>
+        <wux-button block type="positive" bind:click="openType" >授权</wux-button>
+    </view>
+</view>

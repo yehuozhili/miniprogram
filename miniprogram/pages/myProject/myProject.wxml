@@ -1,0 +1,29 @@
+<!--pages/myProject/myProject.wxml-->
+<loginjudge/>
+<view >
+  <wux-tabs  controlled current="{{ current }}" bindchange="onChange" >
+    <wux-tab key="tab1" title="展示用"></wux-tab>
+    <wux-tab key="tab2" title="展示用"></wux-tab>
+    <wux-tab key="tab3" title="展示用"></wux-tab>
+    <wux-tab key="tab4" title="展示用"></wux-tab>
+  </wux-tabs>
+
+<wux-cell-group class="{{current==='tab1'?'':'displaynone'}}"> 
+<scroll-view style="height:{{scrollheight}}px;"   bindscrolltolower="scrollonetime" scroll-y='true' lower-threshold="100" bindscrolltoupper="scrolltoprefresh"	>
+  <wux-cell wx:for="{{onetimedata}}" wx:key="{{index}}" thumb="/pages/images/type/{{item.type}}.png" title="{{item.title}}" extra="{{item.calendar}}" is-link class="{{index%2===0?'mycell':''}}" data-index='{{index}}' bindtap="onetime" hover-class="myhoverclass"></wux-cell>
+  <view class="zhan"></view>
+</scroll-view>
+  
+  <view class="noplan" wx:if="{{todaydata.length==0}}">没有单次计划，点击加号按钮添加</view>
+</wux-cell-group>
+<wux-cell-group class="{{current==='tab2'?'':'displaynone'}}">
+    <wux-cell  thumb="https://wux.cdn.cloverstd.com/logo.png" title="待开发" extra="设置" is-link class="{{index%2===0?'mycell':''}}"></wux-cell>
+</wux-cell-group>
+<wux-cell-group   class="{{current==='tab3'?'':'displaynone'}}">
+    <wux-cell thumb="https://wux.cdn.cloverstd.com/logo.png" title="待开发" extra="设置" is-link class="{{index%2===0?'mycell':''}}"></wux-cell>
+</wux-cell-group>
+<wux-cell-group   class="{{current==='tab4'?'':'displaynone'}}">
+    <wux-cell thumb="https://wux.cdn.cloverstd.com/logo.png" title="待开发" extra="设置" is-link class="{{index%2===0?'mycell':''}}"></wux-cell>
+</wux-cell-group>
+
+</view>

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/auth/auth",
+    "pages/index/index",
+    "pages/addMission/addMission",
+    "pages/myProject/myProject",
+    "pages/about/about",
+    "pages/analyseView/analyseView",
+    "loginjudge/loginjudge",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "TimePlanner",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "今天任务",
+        "iconPath": "/pages/images/time1.png",
+        "selectedIconPath": "/pages/images/time2.png"
+      },
+      {
+        "pagePath": "pages/myProject/myProject",
+        "text": "我的计划",
+        "iconPath": "/pages/images/list1.png",
+        "selectedIconPath": "/pages/images/list2.png"
+      },
+      {
+        "pagePath": "pages/analyseView/analyseView",
+        "text": "统计查看",
+        "iconPath": "/pages/images/analyse1.png",
+        "selectedIconPath": "/pages/images/analyse1.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于作者",
+        "iconPath": "/pages/images/about1.png",
+        "selectedIconPath": "/pages/images/about2.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

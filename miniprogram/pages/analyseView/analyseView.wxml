@@ -1,0 +1,15 @@
+<!--pages/analyseView/analyseView.wxml-->
+
+<view class="mycanvas">
+<view class="title">今日计划投入时间统计</view>
+  <view class="{{!piedatanull?'displaynone':'displaytrue'}}">暂时还没有今天的计划</view>
+  <view class="{{piedatanull?'displaynone':'cartdisplay'}}">
+   <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}" bind:init="echartInit" ></ec-canvas>
+  </view>
+   
+
+
+<view class="title">历史计划投入时间统计</view>
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}" bind:init="barechartInit"></ec-canvas>
+</view>
+<view class="whitespace"></view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+        "wux-button": "../miniprogram_npm/wux-weapp/button/index",
+        "wux-dialog": "../miniprogram_npm/wux-weapp/dialog/index"
+  }
+}

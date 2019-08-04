@@ -1,0 +1,45 @@
+<view class="page">
+    <view class="page__bd">
+        <wux-accordion-group title="展示页面功能未开发" default-current="{{ ['key0'] }}" accordion>
+            <wux-accordion thumb="/pages/images/date_time.png" title="{{list[0].text}}"  key="key0">
+              
+
+            <form >
+              <wux-cell-group>
+                  <wux-cell hover-class="none">
+                      <wux-input label="计划名称:" value="{{ value0 }}" controlled error="{{ error }}" bind:change="onChange"  bind:error="onError" maxlength='20'  placeholder='请输入计划名称'/>
+                  </wux-cell>
+              </wux-cell-group>
+
+      
+              <wux-cell-group>
+                <wux-picker options="{{ typelist }}" value="{{ typevalue }}" cascade cols="1"  bind:confirm="typeConfirm0" >
+                  <wux-cell title="类型" is-link extra="{{ typedisplayvalue }}"></wux-cell>
+                </wux-picker>
+              </wux-cell-group>
+
+              <wux-cell-group title="备注:" >
+                  <wux-cell hover-class="none">
+                      <wux-field name="textarea" >
+                          <wux-textarea rows="3" placeholder="请输入备注,可不填" maxlength='100' controlled bind:change="textChange"/>
+                      </wux-field>
+                  </wux-cell>
+              </wux-cell-group>
+              
+
+              <wux-calendar id="wux-calendar" />
+              <wux-cell-group  >
+              <wux-cell title="选择日期：" extra="{{ calendarValue0 }}" bind:click="openCalendar"></wux-cell>
+              </wux-cell-group>
+
+              <wux-toptips id="wux-toptips1" />
+              <wux-button bindtap="onSubmit" block type='positive'>创建单次计划</wux-button>
+            </form>
+
+            </wux-accordion>
+            <wux-accordion thumb="/pages/images/dayview.png" title="{{list[1].text}}" ></wux-accordion>
+            <wux-accordion thumb="/pages/images/weeklyview.png" title="{{list[2].text}}" ></wux-accordion>
+            <wux-accordion thumb="/pages/images/monthlyview.png" title="{{list[3].text}}" ></wux-accordion>
+        </wux-accordion-group>
+    </view>
+</view>

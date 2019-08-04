@@ -1,0 +1,37 @@
+/* pages/myProject/myProject.wxss */
+
+.mycontainer{
+  margin-bottom: 300rpx;
+}
+
+
+.wux-cell-group__hd{
+  background-color:rgba(196, 210, 255, 0.253);
+}
+.mycell button:nth-of-type(odd){
+  background-color: rgba(233, 192, 220, 0.068);
+}
+.myhoverclass{
+  background-color: #ececec!important;
+} 
+
+
+.noplan{
+  font-size: 30rpx;
+  padding: 10rpx 20rpx 10rpx;
+  text-align: center;
+}
+.wux-cell-group__bd button view{
+  font-size: 25rpx;
+}
+/* index后新增 */
+.displaynone{
+  display: none;
+}
+.wux-tabs--horizontal{
+  background-color:rgba(196, 210, 255, 0.253)!important;
+}
+.zhan{
+  width: 100%;
+  height: 50rpx;
+}

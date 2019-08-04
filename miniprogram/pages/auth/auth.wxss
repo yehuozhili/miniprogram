@@ -1,0 +1,13 @@
+/* miniprogram/pages/auth/auth.wxss */
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.page button{
+  border-radius: 5%;
+}
+.textlogo{
+  font-size: 60rpx;
+}

@@ -1,0 +1,49 @@
+/* loginjudge/loginjudge.wxss */
+
+.loginjudge {
+  display: flex;
+  padding: 20rpx;
+  background-color: blanchedalmond;
+}
+
+.loginwrap {
+  display: flex;
+  margin: 20rpx, 40rpx, 20rpx;
+  align-items: center;
+  padding: 20rpx;
+  border: 1px solid rgba(119, 118, 118, 0.247);
+  border-radius: 1%;
+  background-color: rgba(245, 245, 220, 0.527);
+  flex-grow: 1;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.uppage0 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.uppage1 {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-left: solid 1px rgba(119, 118, 118, 0.247);
+}
+
+.uppage0>image {
+  display: block;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 30%;
+  padding: 5rpx;
+}
+
+.uppage1>view>text {
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,0 +1,11 @@
+/* pages/addMission/addMission.wxss */
+.wux-cell-group>.wux-cell-group__hd{
+  color: black;
+  font-size: 30rpx;
+}
+.wux-accordion__title{
+  font-size: 30rpx;
+}
+.page__bd{
+  margin-top: 20rpx
+}
